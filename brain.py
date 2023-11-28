@@ -9,10 +9,10 @@ from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe
 import pandas as pd
 from langchain.llms import OpenAI
 
-# llm = ChatOpenAI(openai_api_key=os.environ["openai_api_key"])
+llm = ChatOpenAI(openai_api_key=os.environ["OPENAI_API_KEY"])
 
 def get_me_an_answer(question, key):
-  llm = ChatOpenAI(openai_api_key=key)
+  # llm = ChatOpenAI(openai_api_key=key)
   df = pd.read_csv("Neosporin_Patients.csv")
 
   agent = create_pandas_dataframe_agent(
