@@ -8,3 +8,4 @@ langchain
 langchain-experimental
 langsmith
 tabulate
+statsmodels
