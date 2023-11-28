@@ -1,3 +1,9 @@
 altair
 pandas
 streamlit
+openai
+numpy
+scipy
+langchain
+langchain-experimental
+langsmith
