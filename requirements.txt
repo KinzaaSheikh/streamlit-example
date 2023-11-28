@@ -7,3 +7,4 @@ scipy
 langchain
 langchain-experimental
 langsmith
+tabulate
