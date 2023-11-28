@@ -13,5 +13,5 @@ st.title("Lets go talk to the Neosporin data 🦜 🦚")
 question_input = st.text_input("Question:")
 
 if question_input:
-  answer = get_me_an_answer(question_input)
+  answer = get_me_an_answer(question_input, st.secrets["openai_api_key"])
   st.text_area("Answer:", answer)
