@@ -8,7 +8,7 @@ from langchain.chat_models import ChatOpenAI
 
 from brain import get_me_an_answer
 
-st.title("Lets go talk to the Terlipressin matching cohort data 👨‍⚕️ 💉")
+st.title("Ask Quantum about Terlipressin 👨‍⚕️ 💉")
 
 question_input = st.text_input("Question:")
 
