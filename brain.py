@@ -20,6 +20,7 @@ def get_me_an_answer(question, key):
       df,
       verbose=True,
       agent_type=AgentType.OPENAI_FUNCTIONS
+      handle_parsing_errors="This ask is a little beyond my intelligence, and I have traied to Not get creative and make up answer. So sorry I could not help at this time!",
   )
 
   return agent.run(question)
