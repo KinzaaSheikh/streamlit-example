@@ -19,7 +19,7 @@ def get_me_an_answer(question, key):
       ChatOpenAI(temperature=0, model="gpt-3.5-turbo-0613", openai_api_key=key),
       df,
       verbose=True,
-      agent_type=AgentType.OPENAI_FUNCTIONS
+      agent_type=AgentType.OPENAI_FUNCTIONS,
       handle_parsing_errors="This ask is a little beyond my intelligence, and I have traied to Not get creative and make up answer. So sorry I could not help at this time!",
   )
 
