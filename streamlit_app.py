@@ -47,7 +47,7 @@ question_input = st.text_input("Enter your question:", placeholder="e.g., What a
 # --- Display Answer ---
 if question_input:
     with st.spinner("Thinking..."):  # Added a spinner
-        answer = get_me_an_answer(question_input, st.secrets["OPENAI_API_KEY"])
+        answer = get_me_an_answer(question_input, st.secrets["GEMINI_API_KEY"])
     st.markdown("### Answer:")  # More prominent answer heading
     st.info(answer) # Changed to st.info for a cleaner look.  Consider st.markdown for more formatting control
     st.text_area("Answer:", answer, height=200) #alternative if you want to keep text_area
