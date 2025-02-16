@@ -10,3 +10,4 @@ langsmith
 tabulate
 statsmodels
 matplot
+litellm
