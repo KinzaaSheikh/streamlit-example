@@ -13,5 +13,5 @@ st.title("Ask Quantum about Terlipressin 👨‍⚕️ 💉")
 question_input = st.text_input("Question:")
 
 if question_input:
-  answer = get_me_an_answer(question_input, st.secrets["OPENAI_API_KEY"])
-  st.text_area("Answer:", answer)
+    answer = get_me_an_answer(question_input)
+    st.text_area("Answer:", answer)
