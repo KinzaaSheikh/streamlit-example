@@ -20,7 +20,7 @@ def get_me_an_answer(question):
     df = pd.read_csv("Terlipresin Matching Cohort Data.csv")
 
     agent = create_pandas_dataframe_agent(
-        ChatOpenAI(temperature=0, model="gpt-4",
+        ChatOpenAI(temperature=0, model="gpt-4o",
                    openai_api_key=os.environ["OPENAI_API_KEY"]),
         df,
         verbose=True,
